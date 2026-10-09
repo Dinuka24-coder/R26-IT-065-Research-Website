@@ -236,7 +236,7 @@
       const box = document.createElement("div");
       box.className = "video";
       const frame = document.createElement("iframe");
-      frame.src = "https://www.youtube.com/embed/" + btn.dataset.yt + "?autoplay=1&rel=0";
+      frame.src = "https://www.youtube.com/embed/" + btn.dataset.yt + "?autoplay=1&controls=1&rel=0";
       frame.title = btn.getAttribute("aria-label").replace(/^Play /, "");
       frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
       frame.allowFullscreen = true;
