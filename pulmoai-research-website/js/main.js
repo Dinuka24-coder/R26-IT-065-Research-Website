@@ -311,4 +311,16 @@
       status.textContent = "Your email app should open with the message ready to send.";
     });
   }
+
+  /* ── back to top button ────────────────────────────────────── */
+  document.querySelectorAll(".to-top, a[href='#top']").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: reduceMotion ? "auto" : "smooth"
+      });
+    });
+  });
 })();
